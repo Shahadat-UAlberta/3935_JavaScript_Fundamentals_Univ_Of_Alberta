@@ -1,0 +1,75 @@
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --green: #0C0;
+    --white: #EEE;
+    --black: #111;
+}
+body, .white-on-black {
+    --text: var(--white);
+    --back: var(--black);
+}
+.black-on-white {
+    --text: var(--black);
+    --back: var(--white);
+}
+.green-on-black {
+    --text: var(--green);
+    --back: var(--black);
+}
+
+
+#output {
+    background-color: var(--back);
+    overflow-y:scroll;
+    height: 96vh;
+    margin: 0 auto;
+    padding: 2px;
+}
+#output p {
+    margin: 0;
+    color: var(--text);
+}
+#input {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    border: 3px solid var(--black);
+}
+.flash>.editing::after {
+ content: "|";
+ font-weight: bolder;
+}
+
+#themes {
+    background-color: var(--white);
+    border: 3px solid var(--black);
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    padding: 5px;
+}
+.theme {
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--black);
+    border-radius: 3px;
+    margin: 5px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    background-color: var(--back);
+    color: var(--text);
+}
+
+.theme:hover {
+    border-color: rgb(0, 110, 110);
+}
+
+
+
